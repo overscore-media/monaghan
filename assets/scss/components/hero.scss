@@ -1,0 +1,55 @@
+@media only screen and (min-width: 615px) {
+  .hero-anime {
+    height: 100vh !important;
+    width: 100vw !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    overflow: hidden !important;
+    background: hsla(242, 100%, 76%, 0.5);
+  }
+
+  .hero-wrapper {
+    height: 100vh !important;
+  }
+
+  .hero-body {
+    position: relative;
+    top: 10vh !important;
+  }
+
+  .hero-title {
+    font-size: 15vw;
+    font-style: italic;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .hero-anime {
+    height: 60vh !important;
+    width: 100vw !important;
+    margin-bottom: 5vh !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    overflow: hidden !important;
+    background: hsla(242, 100%, 76%, 0.5);
+  }
+
+  .hero-wrapper {
+    height: 60vh !important;
+    margin-bottom: 5vh !important;
+  }
+
+  .hero-body {
+    position: relative;
+    bottom: 15vh !important;
+  }
+
+  .hero-title {
+    font-size: 15vw;
+    font-style: italic;
+    color: white;
+  }
+}

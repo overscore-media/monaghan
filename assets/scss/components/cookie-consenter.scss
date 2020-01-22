@@ -1,0 +1,71 @@
+// Admittedly this is a bit messy...
+
+@media only screen and (min-width: 1200px) {
+  @media only screen and (min-height: 1000px) {
+    .cookie-consent-banner {
+      display: block;
+      height: 20vh;
+      width: 100vw;
+      text-align: center;
+      position: fixed;
+      top: 80vh;
+      background: $darknite;
+      border-top: 8px dashed $bluesh;
+    }
+    .mobile-cookie-banner {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .cookie-consent-banner {
+    display: none !important;
+  }
+  .mobile-cookie-banner {
+    background: $darknite;
+    display: block;
+    height: 90%;
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    top: 70vh;
+    border-top: 8px dashed $bluesh;
+  }
+}
+
+@media only screen and (max-height: 1000px) {
+.cookie-consent-banner {
+    display: none !important;
+  }
+  .mobile-cookie-banner {
+    background: $darknite;
+    display: block;
+    height: 30vh;
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    top: 70vh;
+    border-top: 8px dashed $bluesh;
+  }
+}
+
+@media only screen and (max-height: 615px) {
+  .cookie-consent-banner {
+    display: none !important;
+  }
+  .mobile-cookie-banner {
+    background: $darknite;
+    display: block;
+    height: 100%;
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    top: 60vh;
+    border-top: 8px dashed $bluesh;
+
+    br {
+      display: none;
+    }
+  }
+}

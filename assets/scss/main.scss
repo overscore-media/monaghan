@@ -1,0 +1,51 @@
+// Import Custom SCSS
+@import './components/components.scss';
+@import './variables/variables.scss';
+
+// Import Bulma utilities
+@import "~bulma/sass/utilities/_all";
+
+// Bulma Colours
+
+$darknite:   #282828;
+$monagrey:   #979db8;
+$darkrey:    #60697a;
+$darple:     #554b66;
+$bluesh:     #8884ff;
+$monagreen:  #87b38d;
+
+$primary: $monagreen;
+$primary-invert: findColorInvert($primary);
+
+$info: $monagrey;
+$info-invert: findColorInvert($info);
+
+$light: $darkrey;
+$light-invert: findColorInvert($light);
+
+$dark: $darknite;
+$dark-invert: findColorInvert($dark);
+
+$link: $bluesh;
+$link-invert: findColorInvert($link);
+
+$link-hover: $bluesh;
+$link-focus: $bluesh;
+
+$strong-color: $bluesh;
+
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "link": ($link, $link-invert),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert)
+);
+
+// The rest of Bulma
+@import '~bulma';

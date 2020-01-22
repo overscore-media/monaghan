@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  
+  <body {{ BODY_ATTRS }}>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <select name="reason[]" required>
+        <option value="more-info"></option>
+        <option value="how-to-join"></option>
+        <option value="potential-customer"></option>
+        <option value="but-can-you-do-this"></option>
+        <option value="just-chat"></option>
+        <option value="something-else"></option>
+      </select>
+      <textarea type="text" name="message"></textarea>
+      <input type="checkbox" required>
+    </form>
+    {{ APP }}
+  </body>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function (user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function () {
+            document.location.href = "/admin/"
+          })
+        }
+      })
+    }
+  </script>
+</html>

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Fira Code";
+  font-display: auto;
+  src: local('Fira Code'), url("~assets/fonts/Fira-Code/woff/FiraCode-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("~assets/fonts/Inter/Inter.var.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Six Caps';
+    src: local('Six Caps'), local('SixCaps'),
+        url('~assets/fonts/SixCaps/SixCaps.woff2') format('woff2'),
+        url('~assets/fonts/SixCaps/SixCaps.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+}
+
+.firacode {
+  font-family: "Fira Code", monospace;
+}
+
+.sixcaps {
+    font-family: 'Six Caps';
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 500;
+  font-size: 1rem;
+}
