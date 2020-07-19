@@ -47,7 +47,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-vue": "^6.1.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "nuxt": "^2.11.0",
     "nuxt-matomo": "^1.2.2",
     "nuxt-purgecss": "^0.2.1",
